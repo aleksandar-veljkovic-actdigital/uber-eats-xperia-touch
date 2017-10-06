@@ -2,6 +2,7 @@
 .slick-slider {
   position: relative;
   display: block;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -43,8 +44,6 @@
   left: 0;
   top: 0;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 .slick-track:before, .slick-track:after {
   content: "";
@@ -145,6 +144,8 @@ main #desk #slider1 .button {
   width: 100%;
   height: 15%;
   overflow: hidden;
+  -webkit-transition: opacity .6s .6s;
+  transition: opacity .6s .6s;
 }
 main #desk #slider1 .button img {
   position: absolute;
@@ -155,9 +156,6 @@ main #desk #slider1 .button img {
 }
 main #desk #slider1.ux-ready .slick-current .button {
   opacity: 1;
-  -webkit-transition: opacity .6s .6s;
-  /* Safari */
-  transition: opacity .6s .6s;
 }
 main #desk #slider2 {
   opacity: 0;

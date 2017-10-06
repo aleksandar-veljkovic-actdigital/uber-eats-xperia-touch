@@ -51,7 +51,8 @@ main {
           width: 100%;
           height: 15%;
           overflow: hidden;
-
+          -webkit-transition: opacity .6s .6s;
+          transition: opacity .6s .6s;
           img {
             position: absolute;
             left: 0;
@@ -63,8 +64,6 @@ main {
         }
         &.ux-ready .slick-current .button {
           opacity: 1;
-          -webkit-transition: opacity .6s .6s; /* Safari */
-          transition: opacity .6s .6s;
         }
 
       }

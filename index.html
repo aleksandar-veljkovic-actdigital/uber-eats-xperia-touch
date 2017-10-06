@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
   <meta charset="UTF-8">
-  <title>Tanjiri</title>
+  <title>Uber Eats</title>
   <link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/slick-carousel/slick/slick.min.js"></script>
@@ -69,6 +69,12 @@
     $('#slider1').slick({
       adaptiveHeight: false,
       arrows: false,
+      waitForAnimate: true,
+      accessibility: false,
+      pauseOnFocus: false,
+      pauseOnHover: false,
+      mobileFirst: true,
+      focusOnSelect: false
     });
 
     $('#slider2').slick({
