@@ -129,21 +129,47 @@ main #desk #cloth {
 }
 main #desk #slider1 {
   position: absolute;
-  top: 32.3%;
+  top: 32%;
   left: 7.9%;
   width: 13%;
-  height: 40.7%;
+  height: 41.4%;
   -webkit-transform: rotate(20deg);
   transform: rotate(-8.3deg);
   z-index: 10;
 }
+main #desk #slider1 .button {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+  overflow: hidden;
+}
+main #desk #slider1 .button img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: block;
+}
+main #desk #slider1.ux-ready .slick-current .button {
+  opacity: 1;
+  -webkit-transition: opacity .6s .6s;
+  /* Safari */
+  transition: opacity .6s .6s;
+}
 main #desk #slider2 {
+  opacity: 0;
   position: absolute;
   top: -1.5%;
   left: 10.5%;
   width: 65%;
   height: 92%;
   z-index: 0;
+  -webkit-transition: opacity .6s;
+  /* Safari */
+  transition: opacity .6s;
 }
 
 .slider .slick-list {
@@ -159,7 +185,7 @@ main #desk #slider2 {
   position: relative;
   outline: none;
 }
-.slider .slick-list .slick-track .item img {
+.slider .slick-list .slick-track .item > img {
   width: 100%;
   position: absolute;
   left: 50%;

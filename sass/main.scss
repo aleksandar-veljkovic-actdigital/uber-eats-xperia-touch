@@ -36,22 +36,49 @@ main {
       }
       #slider1 {
         position: absolute;
-        top: 32.3%;
+        top: 32%;
         left: 7.9%;
         width: 13%;
-        height: 40.7%;
+        height: 41.4%;
         -webkit-transform: rotate(20deg);
         transform: rotate(-8.3deg);
         z-index: 10;
+        .button {
+          opacity: 0;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 15%;
+          overflow: hidden;
+
+          img {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            display: block;
+
+          }
+        }
+        &.ux-ready .slick-current .button {
+          opacity: 1;
+          -webkit-transition: opacity .6s .6s; /* Safari */
+          transition: opacity .6s .6s;
+        }
+
       }
 
       #slider2 {
+        opacity: 0;
         position: absolute;
         top: -1.5%;
         left: 10.5%;
         width: 65%;
         height: 92%;
         z-index: 0;
+        -webkit-transition: opacity .6s; /* Safari */
+        transition: opacity .6s;
       }
     }
 }
@@ -68,7 +95,7 @@ main {
         height: 100%;
         position: relative;
         outline: none;
-        img {
+        & > img {
           width: 100%;
           position: absolute;
           left: 50%;

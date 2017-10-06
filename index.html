@@ -50,17 +50,33 @@
   <script>
 
   $(document).ready(function(){
+    $('#slider1 .item').each(function(i, o){
+      var $o = $(o);
+      $o.append('<div class="button" data-i="'+i+'"><img src="assets/img/buton.png"></div>')
+    });
+    $('#slider1 .item .button').click(function(){
+      var $o = $(this);
+      $('#slider2').slick('slickGoTo', $o.data('i'));
+      $('#slider2').slick('slickSetOption', 'speed', 600, false);
+      $('#slider2').css({opacity: 1});
+    });
+    $('#slider1').on('init', function(slick){
+      $o = $(this);
+      setTimeout(function(){
+        $o.addClass('ux-ready');
+      }, 600);
+    });
     $('#slider1').slick({
       adaptiveHeight: false,
       arrows: false,
-      asNavFor: '#slider2'
-    })
+    });
 
     $('#slider2').slick({
       adaptiveHeight: false,
       arrows: false,
       fade: true,
-      swipe: false
+      swipe: false,
+      speed: 0
     })
   });
 
