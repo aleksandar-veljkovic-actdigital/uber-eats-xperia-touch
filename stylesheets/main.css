@@ -1,5 +1,4 @@
 /* Slider */
-/* line 3, ../bower_components/slick-carousel/slick/slick.scss */
 .slick-slider {
   position: relative;
   display: block;
@@ -15,7 +14,6 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 17, ../bower_components/slick-carousel/slick/slick.scss */
 .slick-list {
   position: relative;
   overflow: hidden;
@@ -23,17 +21,14 @@
   margin: 0;
   padding: 0;
 }
-/* line 24, ../bower_components/slick-carousel/slick/slick.scss */
 .slick-list:focus {
   outline: none;
 }
-/* line 28, ../bower_components/slick-carousel/slick/slick.scss */
 .slick-list.dragging {
   cursor: pointer;
   cursor: hand;
 }
 
-/* line 33, ../bower_components/slick-carousel/slick/slick.scss */
 .slick-slider .slick-track,
 .slick-slider .slick-list {
   -webkit-transform: translate3d(0, 0, 0);
@@ -43,7 +38,6 @@
   transform: translate3d(0, 0, 0);
 }
 
-/* line 42, ../bower_components/slick-carousel/slick/slick.scss */
 .slick-track {
   position: relative;
   left: 0;
@@ -52,69 +46,55 @@
   margin-left: auto;
   margin-right: auto;
 }
-/* line 50, ../bower_components/slick-carousel/slick/slick.scss */
 .slick-track:before, .slick-track:after {
   content: "";
   display: table;
 }
-/* line 56, ../bower_components/slick-carousel/slick/slick.scss */
 .slick-track:after {
   clear: both;
 }
-/* line 60, ../bower_components/slick-carousel/slick/slick.scss */
 .slick-loading .slick-track {
   visibility: hidden;
 }
 
-/* line 64, ../bower_components/slick-carousel/slick/slick.scss */
 .slick-slide {
   float: left;
   height: 100%;
   min-height: 1px;
   display: none;
 }
-/* line 68, ../bower_components/slick-carousel/slick/slick.scss */
 [dir="rtl"] .slick-slide {
   float: right;
 }
-/* line 71, ../bower_components/slick-carousel/slick/slick.scss */
 .slick-slide img {
   display: block;
 }
-/* line 74, ../bower_components/slick-carousel/slick/slick.scss */
 .slick-slide.slick-loading img {
   display: none;
 }
-/* line 80, ../bower_components/slick-carousel/slick/slick.scss */
 .slick-slide.dragging img {
   pointer-events: none;
 }
-/* line 84, ../bower_components/slick-carousel/slick/slick.scss */
 .slick-initialized .slick-slide {
   display: block;
 }
-/* line 88, ../bower_components/slick-carousel/slick/slick.scss */
 .slick-loading .slick-slide {
   visibility: hidden;
 }
-/* line 92, ../bower_components/slick-carousel/slick/slick.scss */
 .slick-vertical .slick-slide {
   display: block;
   height: auto;
   border: 1px solid transparent;
 }
 
-/* line 98, ../bower_components/slick-carousel/slick/slick.scss */
 .slick-arrow.slick-hidden {
   display: none;
 }
 
-/* line 3, ../sass/main.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 7, ../sass/main.scss */
 html {
   margin: 0;
   width: 100%;
@@ -122,63 +102,67 @@ html {
   position: relative;
 }
 
-/* line 13, ../sass/main.scss */
 body {
   margin: 0;
   width: 100%;
   height: 100%;
   position: relative;
-  padding: 5px;
 }
 
-/* line 22, ../sass/main.scss */
 main {
   width: 100%;
   height: 100%;
-  outline: 5px solid blue;
-  border: 10px solid #555;
+  background-color: black;
+}
+main #desk {
+  width: 100%;
+  border: 10px solid black;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+main #desk #cloth {
+  width: 100%;
+  display: block;
+}
+main #desk #slider1 {
+  position: absolute;
+  top: 32.3%;
+  left: 7.9%;
+  width: 13%;
+  height: 40.7%;
+  -webkit-transform: rotate(20deg);
+  transform: rotate(-8.3deg);
+  z-index: 10;
+}
+main #desk #slider2 {
+  position: absolute;
+  top: -1.5%;
+  left: 10.5%;
+  width: 65%;
+  height: 92%;
+  z-index: 0;
 }
 
-/* line 30, ../sass/main.scss */
 .slider .slick-list {
   height: 100%;
 }
-/* line 32, ../sass/main.scss */
 .slider .slick-list .slick-track {
   height: 100%;
 }
-/* line 34, ../sass/main.scss */
 .slider .slick-list .slick-track .item {
   overflow: hidden;
   width: 100%;
   height: 100%;
   position: relative;
+  outline: none;
 }
-/* line 39, ../sass/main.scss */
 .slider .slick-list .slick-track .item img {
   width: 100%;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-
-/* line 51, ../sass/main.scss */
-#slider1 {
-  position: absolute;
-  bottom: 50%;
-  left: 10%;
-  width: 30%;
-  height: 30%;
-  outline: 3px solid lime;
-}
-
-/* line 60, ../sass/main.scss */
-#slider2 {
-  position: absolute;
-  bottom: 50%;
-  right: 10%;
-  width: 30%;
-  height: 30%;
-  outline: 3px solid lime;
 }

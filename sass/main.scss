@@ -16,15 +16,46 @@ body {
   width: 100%;
   height: 100%;
   position: relative;
-  padding: 5px;
 }
 
 main {
     width: 100%;
     height: 100%;
-    outline: 5px solid blue;
-    border: 10px solid #555;
+    background-color: black;
+    #desk {
+      width: 100%;
+      border: 10px solid black;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      #cloth {
+        width: 100%;
+        display: block;
+      }
+      #slider1 {
+        position: absolute;
+        top: 32.3%;
+        left: 7.9%;
+        width: 13%;
+        height: 40.7%;
+        -webkit-transform: rotate(20deg);
+        transform: rotate(-8.3deg);
+        z-index: 10;
+      }
+
+      #slider2 {
+        position: absolute;
+        top: -1.5%;
+        left: 10.5%;
+        width: 65%;
+        height: 92%;
+        z-index: 0;
+      }
+    }
 }
+
 
 .slider {
   .slick-list{
@@ -36,6 +67,7 @@ main {
         width: 100%;
         height: 100%;
         position: relative;
+        outline: none;
         img {
           width: 100%;
           position: absolute;
@@ -46,22 +78,4 @@ main {
       }
     }
   }
-}
-
-#slider1 {
-  position: absolute;
-  bottom: 50%;
-  left: 10%;
-  width: 30%;
-  height: 30%;
-  outline: 3px solid lime;
-}
-
-#slider2 {
-  position: absolute;
-  bottom: 50%;
-  right: 10%;
-  width: 30%;
-  height: 30%;
-  outline: 3px solid lime;
 }
