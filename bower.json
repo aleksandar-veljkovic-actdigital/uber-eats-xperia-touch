@@ -1,0 +1,20 @@
+{
+  "name": "tanjiri",
+  "version": "0.0.0",
+  "authors": [
+    "coa.develop@street.rs"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "1.8.0",
+    "jquery": "3.2.1"
+  }
+}

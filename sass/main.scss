@@ -1,0 +1,67 @@
+@import '../bower_components/slick-carousel/slick/slick';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body {
+
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 5px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    outline: 5px solid blue;
+    border: 10px solid #555;
+}
+
+.slider {
+  .slick-list{
+    height: 100%;
+    .slick-track{
+      height: 100%;
+      .item {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        img {
+          width: 100%;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}
+
+#slider1 {
+  position: absolute;
+  bottom: 50%;
+  left: 10%;
+  width: 30%;
+  height: 30%;
+  outline: 3px solid lime;
+}
+
+#slider2 {
+  position: absolute;
+  bottom: 50%;
+  right: 10%;
+  width: 30%;
+  height: 30%;
+  outline: 3px solid lime;
+}
