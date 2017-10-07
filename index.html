@@ -54,12 +54,19 @@
       var $o = $(o);
       $o.append('<div class="button" data-i="'+i+'"><img src="assets/img/buton.png"></div>')
     });
-    $('#slider1 .item .button').on('click touchstart', function(){
+
+    $('#slider1 .item .button').on('click touchstart touchend touchmove', function(e){
+
       var $o = $(this);
       $('#slider2').slick('slickGoTo', $o.data('i'));
       $('#slider2').slick('slickSetOption', 'speed', 600, false);
       $('#slider2').css({opacity: 1});
+
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
     });
+
     $('#slider1').on('init', function(slick){
       $o = $(this);
       setTimeout(function(){
