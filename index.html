@@ -54,7 +54,7 @@
       var $o = $(o);
       $o.append('<div class="button" data-i="'+i+'"><img src="assets/img/buton.png"></div>')
     });
-    $('#slider1 .item .button').click(function(){
+    $('#slider1 .item .button').on('click touchstart', function(){
       var $o = $(this);
       $('#slider2').slick('slickGoTo', $o.data('i'));
       $('#slider2').slick('slickSetOption', 'speed', 600, false);
