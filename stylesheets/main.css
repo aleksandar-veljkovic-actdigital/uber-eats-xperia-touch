@@ -129,12 +129,16 @@ main #desk #cloth {
 main #desk #slider1 {
   position: absolute;
   top: 32%;
-  left: 7.9%;
+  left: 8%;
   width: 13%;
-  height: 41.4%;
-  -webkit-transform: rotate(20deg);
+  height: 44.4%;
+  -webkit-transform: rotate(-8.3deg);
   transform: rotate(-8.3deg);
   z-index: 10;
+}
+main #desk #slider1 .item > img {
+  display: block;
+  padding-bottom: 13%;
 }
 main #desk #slider1 .button {
   opacity: 0;
@@ -142,7 +146,7 @@ main #desk #slider1 .button {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 15%;
+  height: 25%;
   overflow: hidden;
   -webkit-transition: opacity .6s .6s;
   transition: opacity .6s .6s;
@@ -150,7 +154,7 @@ main #desk #slider1 .button {
 main #desk #slider1 .button img {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 29%;
   width: 100%;
   display: block;
 }
